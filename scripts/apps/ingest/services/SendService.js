@@ -137,6 +137,9 @@ export function SendService(desks, api, $q, notify, $injector, multi, $rootScope
         } else if (!item.lock_user) {
             return api.save('move', {}, {task: data}, item).then((item) => {
                 $rootScope.$broadcast('item:update', {item: item});
+                if (config.open) {
+                    $injector.get('authoringWorkspace').edit(item);
+                }
                 return item;
             });
         }
