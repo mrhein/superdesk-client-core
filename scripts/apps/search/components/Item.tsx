@@ -47,8 +47,6 @@ export class Item extends React.Component<any, any> {
     }
 
     componentWillMount() {
-        const {config} = this.props.svc;
-
         if (get(this.props, 'svc.config.apps', []).includes('superdesk-planning')) {
             this.loadPlanningModals();
         }
