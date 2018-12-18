@@ -1,5 +1,11 @@
 # Superdesk Client Changelog
 
+## [1.26.6] 2018-12-18
+
+### Fixed
+
+- Update Norwegian translation.
+
 ## [1.26.5] 2018-12-13
 
 ### Fixed
